@@ -1,9 +1,9 @@
-# DoctorFinder-React
+# Vet/Animal Health Technician Finder
 
 
-Search for vets by specialty, zipcode, using the BetterDoctor API.
+Search for Vets/Animal Health Technicians by specialty, zipcode, using the vetFinder API.
 
-Created using JavaScript, Node.js, express and some JQuery. User database managed by mySQL
+Created using HTML5,CSS3,JavaScript, Node.js, express and some JQuery. User database managed by mySQL
 
 # Git Commands
 
