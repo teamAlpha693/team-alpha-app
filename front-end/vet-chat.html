@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>Doccure - HTML Mobile Template</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/plugins/swiper/css/swiper.min.css">
+
+    <!-- Circle CSS -->
+    <link rel="stylesheet" href="assets/css/circle.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="side-menu" id="sidebar-menu">
+			<div class="close-btn"><span class="material-icons">close</span></div>
+			<ul>
+				<li>
+					<a class="" href="doctor-dashboard.html">
+						<span class="material-icons">dashboard</span>
+						Dashboard
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="appointments.html">
+						<span class="material-icons">date_range</span>
+						Appointments
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="patients-list.html">
+						<span class="material-icons">person</span>
+						My Clients
+					</a>
+				</li>
+				<li>
+					<a class="" href="schedule-timings.html">
+						<span class="material-icons">access_time</span>
+						Schedule Timings
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="invoices.html">
+						<span class="material-icons">insert_drive_file</span>
+						Invoices
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="" href="pages.html">
+						<span class="material-icons">pages</span>
+						Pages
+					</a>
+                </li> -->
+                <li>
+					<a class="" href="health-record.html">
+						<span class="material-icons">dashboard</span>
+						Health Record
+					</a>
+				</li>
+				<li>
+					<a class="" href="vet-chat.html">
+						<span class="material-icons">message</span>
+						Message
+					</a>
+				</li>
+				<li>
+					<a class="" href="profile-settings.html">
+						<span class="material-icons">settings</span>
+						Profile Settings
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="social-media.html">
+						<span class="material-icons">share</span>
+						Social Media
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="change-password.html">
+						<span class="material-icons">lock_open</span>
+						Change Password
+					</a>
+				</li>
+			</ul>
+			<a class="sidebar-logout" href="login.html"><span><img src="assets/img/open-account-logout.svg"
+						alt=""></span>Logout</a>
+		</div>
+
+        <div class="navbar two-action no-hairline">
+            <div class="navbar-inner d-flex align-items-center">
+                <div class="left">
+                    <a href="#" class="link icon-only">
+                        <i class="custom-hamburger">
+                            <span><b></b></span>
+                        </i>
+                    </a>
+                </div>
+                <div class="sliding custom-title">Chat</div>
+                <div class="right d-flex">
+                    <a href="notifications.html" class="link icon-only"><i class="material-icons">notifications</i></a>
+                    <a href="#" data-toggle="dropdown" aria-expanded="true" class="link"><i class="material-icons">more_vert</i></a>
+                    <div class="dropdown-menu dropdown-menu-right header_drop_icon">
+                        <a href="doctor-profile.html" class="dropdown-item">My Profile</a>
+                        <!-- <a href="profile-settings.html" class="dropdown-item">Settings</a> -->
+                        <a href="login.html" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content header-bg pt-0">
+            <div class="chat-list-new">
+                <div class="container">
+                    <div class="chat-title">
+                        <div class="chat-list-title"><i><img src="assets/img/chat.svg" alt=""></i> Chat List</div>
+                        <div class="user">128 Users</div>
+                    </div>
+                    <!-- Searchbar with auto Search -->
+                    <form class="searchbar">
+                        <div class="search_chat has-search">
+                            <span class="fas fa-search form-control-feedback"></span>
+                            <input class="form-control chat_input" id="search-chat" type="text" placeholder="">
+                        </div>
+                    </form>
+                    <div class="list chat-list">
+                        <ul>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content link">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient6.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Bernadette Carol</div>
+                                            <div class="item-right">09:25 AM</div>
+                                        </div>
+                                        <div class="item-text read">Lorem Ipsum is simply dummy <span class="smile"><img src="assets/img/smile.svg" alt=""></span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient4.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="offline"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Gabrielle</div>
+                                            <div class="item-right">Mar 27, 2020</div>
+                                        </div>
+                                        <div class="item-text">Contrary to popular belief...</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient3.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Connor Dan</div>
+                                            <div class="item-right">12:15 PM</div>
+                                        </div>
+                                        <div class="item-text">There are many variations 
+                                            <span class="smile"><img src="assets/img/likess.svg" alt=""></span>
+                                        </div>
+                                        <div class="msg-notification">2</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient8.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="offline"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Harry Ian</div>
+                                            <div class="item-right">09:25 AM</div>
+                                        </div>
+                                        <div class="item-text">Lorem Ipsum is simply dum<span class="smile"><img src="assets/img/smile.svg" alt=""></span>y</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/user.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Lauren Leah</div>
+                                        </div>
+                                        <div class="item-text">If you are going to use a passage .....</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient7.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Madeleine Penelope</div>
+                                            <div class="item-right">04:25PM</div>
+                                        </div>
+                                        <div class="item-text">Hello
+                                            <span class="smile"><img src="assets/img/smile.svg" alt=""></span>
+                                        </div>
+                                        <div class="msg-notification">2</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vet-chat-view.html" class="item-link item-content swipeout-content">
+                                    <div class="item-avatar">
+                                        <img src="assets/img/patients/patient15.jpg" class="rounded-circle" width="55" alt="">
+                                        <div class="online"></div>
+                                    </div>
+                                    <div class="item-col">
+                                        <div class="item-title-row d-flex justify-content-between">
+                                            <div class="item-title">Lillian</div>
+                                            <div class="item-right">04:25PM</div>
+                                        </div>
+                                        <div class="item-text">Booking Confirmed, Call?
+                                            <span class="smile"><img src="assets/img/telephone.svg" alt=""></span>
+                                        </div>
+                                        <div class="msg-notification">2</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="fixed-chat-col">
+                            <a href="#"><img src="assets/img/chat-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Main wrapper -->
+    
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="assets/plugins/swiper/js/swiper.min.js"></script>
+
+     <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    
+</body>
+
+</html>

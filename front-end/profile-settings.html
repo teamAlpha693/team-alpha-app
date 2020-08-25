@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>Doccure - HTML Mobile Template</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	 <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/plugins/swiper/css/swiper.min.css">
+
+    <!-- Bootstrap Datepicker CSS -->
+	<link rel="stylesheet" href="assets/css/jquery.datepicker2.css">
+
+	<!-- Circle CSS -->
+	<link rel="stylesheet" href="assets/css/circle.css">
+
+	<!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+		<div class="side-menu" id="sidebar-menu">
+			<div class="close-btn"><span class="material-icons">close</span></div>
+			<ul>
+				<li>
+					<a class="" href="doctor-dashboard.html">
+						<span class="material-icons">dashboard</span>
+						Dashboard
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="appointments.html">
+						<span class="material-icons">date_range</span>
+						Appointments
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="patients-list.html">
+						<span class="material-icons">person</span>
+						My Clients
+					</a>
+				</li>
+				<li>
+					<a class="" href="schedule-timings.html">
+						<span class="material-icons">access_time</span>
+						Schedule Timings
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="invoices.html">
+						<span class="material-icons">insert_drive_file</span>
+						Invoices
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="" href="pages.html">
+						<span class="material-icons">pages</span>
+						Pages
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="health-record.html">
+						<span class="material-icons">dashboard</span>
+						Health Record
+					</a>
+				</li>
+				<li>
+					<a class="" href="vet-chat.html">
+						<span class="material-icons">message</span>
+						Message
+					</a>
+				</li>
+				<li>
+					<a class="" href="profile-settings.html">
+						<span class="material-icons">settings</span>
+						Profile Settings
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="social-media.html">
+						<span class="material-icons">share</span>
+						Social Media
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="change-password.html">
+						<span class="material-icons">lock_open</span>
+						Change Password
+					</a>
+				</li>
+			</ul>
+			<a class="sidebar-logout" href="login.html"><span><img src="assets/img/open-account-logout.svg"
+						alt=""></span>Logout</a>
+		</div>
+
+        <div class="navbar two-action no-hairline">
+            <div class="navbar-inner d-flex align-items-center">
+                <div class="left">
+                    <a href="#" class="link icon-only">
+                    	<i class="custom-hamburger">
+                    		<span><b></b></span>
+                    	</i>
+                    </a>
+                </div>
+                <div class="sliding custom-title">Profile Settings</div>
+                <div class="right d-flex">
+                    <a href="notifications.html" class="link icon-only"><i class="material-icons">notifications</i></a>
+                    <a href="#" data-toggle="dropdown" aria-expanded="true" class="link"><i class="material-icons">more_vert</i></a>
+                    <div class="dropdown-menu dropdown-menu-right header_drop_icon">
+                    	<!-- <a href="doctor-profile.html" class="dropdown-item">My Profile</a> -->
+                    	<a href="profile-settings.html" class="dropdown-item">Settings</a>
+                    	<a href="login.html" class="dropdown-item">Log Out</a>
+                	</div>
+                </div>
+            </div>
+        </div>
+
+
+		<div class="page-content profile-settings">
+
+			<!-- Profile settings -->
+			<div class="container">
+				<div class="tab-col">
+				 	<ul class="nav nav-tabs">
+					    <li><a href="#basic-info" data-toggle="tab" class="active">Basic Info</a></li>  
+					    <li><a href="#about-me" data-toggle="tab">About Me</a></li>
+					    <li><a href="#clinic-info" data-toggle="tab">Clinic Info</a></li>
+					    <li><a href="#contact-details" data-toggle="tab">Contact Details</a></li>
+					    <li><a href="#pricing-services" data-toggle="tab">Pricing & Services</a></li>
+					    <li><a href="#education-experience" data-toggle="tab">Education & Experience</a></li>
+					    <li><a href="#awards-memberships" data-toggle="tab">Awards & Memberships</a></li>
+					    <li><a href="#registrations" data-toggle="tab">Registrations</a></li>
+				  	</ul>
+			  	</div>
+
+			 	<div class="tab-content">
+
+			 		<div class="tab-pane active" id="basic-info">
+				    	<div class="panel panel-default">
+				    		<div id="collapseOne" class="panel-collapse collapse in">
+				          		<div class="panel-body">
+				          			<div class="setting-widget">
+										<div class="list no-hairlines-md">
+											<div class="widget-title">
+												<h5>Basic Information</h5>
+											</div>
+											<div class="file-upload">
+												<a href="doctor-profile.html" class="file-upload-img">
+													<img src="assets/img/doctors/doctor-thumb-02.jpg" class="img-fluid img-circle" width="85" alt="User Image">
+													<span class="cam-icon"><img src="assets/img/placeholder-small.svg" alt=""></span>
+												</a>
+											</div>
+											<form>
+											  	<ul>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Username <span>*</span></div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">E-mail <span>*</span></div>
+												        	<div class="item-input-wrap">
+												          		<input type="email">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">First Name <span>*</span></div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Last Name <span>*</span></div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Phone Number</div>
+												        	<div class="item-input-wrap">
+												          		<input type="tel">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input col-50 gender">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Gender</div>
+												        	<div class="item-input-wrap input-dropdown-wrap">
+												          		<select>
+												            		<option value="Male">Male</option>
+												            		<option value="Female">Female</option>
+												          		</select>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input col-50 dob">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">From</div>
+												        	<div class="item-input-wrap date-picker-col">
+												          		<input type="text" name="date" id="date" data-select="datepicker">
+										            			<span class="calendar-icon"><img src="assets/img/icon-metro-calendar-big.svg" alt=""></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="bottom-button">
+												    	<button class="btn">Next</button>
+												    </li>
+											  	</ul>
+										  	</form>
+										</div>
+								    </div>
+				          		</div>
+				          	</div>
+				    	</div>
+					</div>
+
+					<div class="tab-pane" id="about-me">
+				      	<div class="panel panel-default">
+				        	<div id="collapseTwo" class="panel-collapse collapse">
+				          		<div class="panel-body">
+				          			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>About Me</h5>
+										</div>
+										<form>
+											<ul>
+												<li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Biography</div>
+											        	<div class="item-input-wrap">
+											          		<textarea placeholder="Within 400 characters"></textarea>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="bottom-button">
+											    	<button class="btn">Next</button>
+											    </li>
+											</ul>
+										</form>
+							      	</div>
+				          		</div>
+				          	</div>
+				        </div>
+			      	</div>
+
+
+				    <div class="tab-pane" id="clinic-info">
+				      	<div class="panel panel-default">
+				        	<div id="collapseThree" class="panel-collapse collapse">
+				          		<div class="panel-body">
+				          			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Clinic Info</h5>
+										</div>
+										<form>
+											<ul>
+												<li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Clinic Name </div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Clinic Address </div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Clinic Images</div>
+											        	<div class="item-input-wrap">
+											        		<div class="file-upload-multiple">
+											          			<input type="file" id="choose" placeholder="Click here to upload images" multiple="multiple" />
+											          			<span class="placeholder-text">Click here to upload images</span>
+											          		</div>
+														    <div id="uploadPreview"></div>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="bottom-button">
+											    	<button class="btn">Next</button>
+											    </li>
+											</ul>
+										</form>
+							      	</div>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+
+				    <div class="tab-pane" id="contact-details">
+					  	<div class="panel panel-default">
+					    	<div id="collapseFour" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Contact Details</h5>
+										</div>
+										<form>
+											<ul>
+												<li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Address Line 1</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Address Line 2</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">City</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">State / Province</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Country</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Postal Code</div>
+											        	<div class="item-input-wrap">
+											          		<input type="text">
+											          		<span class="input-clear-button"></span>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="bottom-button">
+											    	<button class="btn">Next</button>
+											    </li>
+											</ul>
+										</form>
+							      	</div>
+					      		</div>
+					      	</div>
+					    </div>
+					</div>
+
+					<div class="tab-pane" id="pricing-services">
+					  	<div class="panel panel-default">
+					    	<div id="collapseFive" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Pricing</h5>
+										</div>
+										<div class="pricing-col">
+											<div class="list">
+											  	<ul>
+												    <li>
+												      	<div class="custom-control custom-radio custom-control-inline">
+								            				<input type="radio" class="custom-control-input" name="customRadio" id="customRadio1">
+								            				<label class="custom-control-label" for="customRadio1"><span>Male</span></label>
+								        				</div>
+												    </li>
+												    <li>
+												      	<div class="custom-control custom-radio custom-control-inline">
+								            				<input type="radio" class="custom-control-input" name="customRadio" id="customRadio2">
+								            				<label class="custom-control-label" for="customRadio2"><span>Custom Price (per hour)</span></label>
+								        				</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												          		<span class="input-clear-button"></span>
+												        	</div>
+												      	</div>
+												    </li>
+											  	</ul>
+											</div>
+										</div>
+										<div class="services-specialization">
+											<ul>
+												<li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Services</div>
+											        	<div class="item-input-wrap">
+											          		<form id="data">
+															    <input type="" class="form-control" id="Services">
+															    <button type="button" class="append-btn add-btn" data-trigger="focus"></button>
+															</form>
+															<ul id="profileCard" class="dis-none">
+															</ul>
+											        	</div>
+											      	</div>
+											    </li>
+											    <li class="item-content item-input">
+											      	<div class="item-col">
+											        	<div class="item-title item-label">Specialization</div>
+											        	<div class="item-input-wrap">
+											          		<form id="data1">
+															    <input type="" class="form-control" id="Specialization">
+															    <button type="button" class="append-btn1 add-btn" data-trigger="focus"></button>
+															</form>
+															<ul id="profileCard1" class="dis-none">
+															</ul>
+											        	</div>
+											      	</div>
+											    </li>
+											</ul>
+										</div>
+										<ul>
+											<li class="bottom-button">
+										    	<button class="btn">Next</button>
+										    </li>
+										</ul>
+							      	</div>
+					      		</div>
+					      	</div>
+					    </div>
+					</div>
+
+					<div class="tab-pane" id="education-experience">
+					  	<div class="panel panel-default">
+					    	<div id="collapseSix" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Education</h5>
+										</div>
+										<div class="education-experience">
+											<form class="append-col">
+												<ul class="education-details">
+													<li class="item-content item-input trash-icon-for-tab">
+														<span class="trash-icon"></span>
+													</li>
+												    <li class="item-content item-input col-50 gender">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Degree</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input col-50 dob">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Year of Completion</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">College/Institute</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												</ul>
+											</form>
+											<span class="add-btn"></span>
+										</div>
+										<div class="work-experience">
+											<div class="widget-title">
+												<h5>Experience</h5>
+											</div>
+											<form class="append-col">
+												<ul class="work-experience-col">
+													<li class="item-content item-input trash-icon-for-tab">
+														<span class="trash-icon"></span>
+													</li>
+													<li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Hospital Name</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+													<li class="item-content item-input col-50 gender">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">From</div>
+												        	<div class="item-input-wrap date-picker-col">
+												          		<input type="text" name="date" id="date" data-select="datepicker">
+										            			<span class="calendar-icon"><img src="assets/img/icon-metro-calendar-big.svg" alt=""></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input col-50 dob">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">To</div>
+												        	<div class="item-input-wrap date-picker-col">
+												          		<input type="text" name="date" id="date" data-select="datepicker">
+										            			<span class="calendar-icon"><img src="assets/img/icon-metro-calendar-big.svg" alt=""></span>
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Hospital Name</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												</ul>
+											</form>
+											<span class="add-btn"></span>
+										</div>
+										<ul>
+											<li class="bottom-button">
+										    	<button class="btn">Next</button>
+										    </li>
+										</ul>
+							      	</div>
+					      		</div>
+					      	</div>
+					    </div>
+					</div>
+
+					<div class="tab-pane" id="awards-memberships">
+					  	<div class="panel panel-default">
+					    	<div id="collapseFour" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Awards</h5>
+										</div>
+										<div class="awards-experience">
+											<form class="append-col">
+												<ul class="awards-details">
+													<li class="item-content item-input trash-icon-for-tab">
+														<span class="trash-icon"></span>
+													</li>
+													<li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Awards</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Year</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												</ul>
+											</form>
+											<span class="add-btn"></span>
+										</div>
+										<div class="membership-experience">
+											<div class="widget-title">
+												<h5>Memberships</h5>
+											</div>
+											<form class="append-col">
+												<ul class="membership-details">
+													<li class="item-content item-input trash-icon-for-tab">
+														<span class="trash-icon"></span>
+													</li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Memberships</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												</ul>
+											</form>
+											<span class="add-btn"></span>
+										</div>
+										<ul>
+											<li class="bottom-button">
+										    	<button class="btn">Next</button>
+										    </li>
+										</ul>
+							      	</div>
+					      		</div>
+					      	</div>
+					    </div>
+					</div>
+
+					<div class="tab-pane" id="registrations">
+					  	<div class="panel panel-default">
+					    	<div id="collapseFour" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<div class="setting-widget">
+							      		<div class="widget-title">
+											<h5>Registrations</h5>
+										</div>
+										<div class="registration-col">
+											<form class="append-col">
+												<ul class="registration-details">
+													<li class="item-content item-input trash-icon-for-tab">
+														<span class="trash-icon"></span>
+													</li>
+													<li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Registrations</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												    <li class="item-content item-input">
+												      	<div class="item-col">
+												        	<div class="item-title item-label">Year</div>
+												        	<div class="item-input-wrap">
+												          		<input type="text">
+												        	</div>
+												      	</div>
+												    </li>
+												</ul>
+											</form>
+											<span class="add-btn"></span>
+										</div>
+										<ul>
+											<li class="bottom-button">
+										    	<button class="btn">Done</button>
+										    </li>
+										</ul>
+							      	</div>
+					      		</div>
+					      	</div>
+					    </div>
+					</div>
+
+			 	</div>
+
+			</div>
+			<!-- Profile settings -->
+
+		</div>
+
+	</div>
+    <!-- /Main wrapper -->
+	
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Datepicker JS -->
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/js/jquery.datepicker2.js"></script>
+    
+    <!-- Bootstrap Core JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Swiper JS -->
+    <script src="assets/plugins/swiper/js/swiper.min.js"></script>
+
+     <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+	
+</body>
+
+</html>

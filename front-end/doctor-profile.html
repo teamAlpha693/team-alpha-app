@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>Doccure </title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Fancyboc CSS -->
+	<link rel="stylesheet" href="assets/plugins/fancybox/jquery.fancybox.min.css">
+
+	 <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/plugins/swiper/css/swiper.min.css">
+
+	<!-- Circle CSS -->
+	<link rel="stylesheet" href="assets/css/circle.css">
+
+	<!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+		<div class="side-menu" id="sidebar-menu">
+			<div class="close-btn"><span class="material-icons">close</span></div>
+			<ul>
+				<li>
+					<a class="" href="index.html">
+						<span class="material-icons">dashboard</span>
+						Dashboard
+					</a>
+				</li>
+				<li>
+					<a class="" href="appointments.html">
+						<span class="material-icons">date_range</span>
+						Appointments
+					</a>
+				</li>
+				<!-- <li>
+					<a class="" href="patients-list.html">
+						<span class="material-icons">person</span>
+						My Patients
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="" href="schedule-timings.html">
+						<span class="material-icons">access_time</span>
+						Schedule Timings
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="" href="invoices.html">
+						<span class="material-icons">insert_drive_file</span>
+						Invoices
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="" href="pages.html">
+						<span class="material-icons">pages</span>
+						Pages
+					</a>
+				</li> -->
+				<li>
+					<a class="" href="chat.html">
+						<span class="material-icons">message</span>
+						Message
+					</a>
+				</li>
+				<li>
+					<a class="" href="patient-profile-settings.html">
+						<span class="material-icons">settings</span>
+						Profile Settings
+					</a>
+				</li>
+				<li>
+					<a class="" href="social-media.html">
+						<span class="material-icons">share</span>
+						Social Media
+					</a>
+				</li>
+				<li>
+					<a class="" href="change-password.html">
+						<span class="material-icons">lock_open</span>
+						Change Password
+					</a>
+				</li>
+			</ul>
+			<a class="sidebar-logout" href="login.html"><span><img src="assets/img/open-account-logout.svg"
+						alt=""></span>Logout</a>
+		</div>
+
+        <div class="navbar two-action no-hairline">
+            <div class="navbar-inner d-flex align-items-center">
+                <div class="left">
+                    <a href="#" class="link icon-only">
+                    	<i class="custom-hamburger">
+                    		<span><b></b></span>
+                    	</i>
+                    </a>
+                </div>
+                <div class="sliding custom-title">Vet/Animal Health Technician - Profile</div>
+                <div class="right d-flex">
+                    <a href="notifications.html" class="link icon-only"><i class="material-icons">notifications</i></a>
+                    <a href="#" data-toggle="dropdown" aria-expanded="true" class="link"><i class="material-icons">more_vert</i></a>
+                    <div class="dropdown-menu dropdown-menu-right header_drop_icon">
+                    	<a href="patient-profile-settings.html" class="dropdown-item">My Profile</a>
+                    	<!-- <a href="profile-settings.html" class="dropdown-item">Settings</a> -->
+                    	<a href="login.html" class="dropdown-item">Log Out</a>
+                	</div>
+                </div>
+            </div>
+        </div>
+	
+	    <div class="page-content pt-0">
+
+        	<!-- Doctor Profile -->
+        	<div class="doctor-profile-tab">
+        		<div class="container">
+				 	<div class="tab-col">
+					 	<ul class="nav nav-tabs">
+						    <li><a href="#OverView" data-toggle="tab" class="active">OverView</a></li>  
+						    <li><a href="#Location" data-toggle="tab">Location</a></li>
+						    <li><a href="#Reviews" data-toggle="tab">Reviews</a></li>
+						    <li><a href="#Hours" data-toggle="tab">Hours</a></li>
+					  	</ul>
+				  	</div>
+
+				  	<div class="tab-content">
+					    <div class="tab-pane active" id="OverView">
+						    <div class="panel panel-default">
+						        <div id="collapseOne" class="panel-collapse collapse in">
+						          	<div class="panel-body">
+						          		<div class="tab-widget">
+									      	<div class="left-icon-col">
+									      		<span><img src="assets/img/i-icon.svg" alt="i"></span>
+									      	</div>
+									          
+									        <div class="right-content-col">
+									        	<div class="doctor-widget">
+													<div class="doc-info-left">
+														<div class="doctor-img">
+															<a href="doctor-profile.html" class="doctor-img-profile">
+																<img src="assets/img/doctors/doctor-thumb-02.jpg" class="img-fluid img-circle" alt="User Image">
+															</a>
+														</div>
+														<div class="doc-info-cont">
+															<h4 class="doc-name"><a href="doctor-profile.html">Dr. Cynthia Nolari</a></h4>
+															<h5 class="doc-department">
+																<span class="speciality-img"><img src="assets/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality"></span> Veterinary Physician
+															</h5>
+														</div>
+													</div>
+													<div class="doc-info-right">
+														<p class="doc-speciality">BS, MDS - Veterinary Medicine</p>
+														<div class="doc-info">
+															<span class="doc-experince">3+ Exp</span>
+															<div class="doc-location">
+																<p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-widget">
+											<div class="left-icon-col">
+									      		<span><img src="assets/img/icon-awesome-user.svg" alt="i"></span>
+									      	</div>
+
+									      	<div class="right-content-col">
+									      		<div class="doctor-widget">
+									      			<h6>About us</h6>
+									      			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+									      		</div>
+									      	</div>
+										</div>
+
+										<div class="tab-widget">
+											<div class="left-icon-col">
+									      		<span><img src="assets/img/icon-book.svg" alt="i"></span>
+									      	</div>
+
+									      	<div class="right-content-col">
+									      		<div class="doctor-widget">
+									      			<h6>Education</h6>
+									      			<h5 class="list-title"><i class="material-icons">checkmark_alt</i> University of Nairobi</h5>
+									      			<span class="sub-title">BS</span>
+									      			<span class="sub-title">1998 - 2003</span>
+									      		</div>
+									      	</div>
+										</div>
+
+										<div class="tab-widget">
+											<div class="left-icon-col">
+									      		<span><img src="assets/img/map-doctor.svg" alt="i"></span>
+									      	</div>
+
+									      	<div class="right-content-col">
+									      		<div class="doctor-widget">
+									      			<h6>Work & Experience</h6>
+									      			<h5 class="list-title"><i class="material-icons">checkmark_alt</i> Glowing Smiles Family Dental Clinic</h5>
+									      			<span class="sub-title">2010 - Present (5 years)</span>
+									      			<h5 class="list-title"><i class="material-icons">checkmark_alt</i> Comfort Care Dental Clinic</h5>
+									      			<span class="sub-title">2007 - 2010 (3 years)</span>
+									      		</div>
+									      	</div>
+										</div>
+
+										<div class="tab-widget">
+											<div class="left-icon-col">
+									      		<span><img src="assets/img/icon-user-nurse.svg" alt="i"></span>
+									      	</div>
+
+									      	<div class="right-content-col">
+									      		<div class="doctor-widget">
+									      			<h6>Services</h6>
+									      			<ul>
+									      				<li><i class="material-icons">checkmark_alt</i> Tooth cleaning</li>
+									      				<li><i class="material-icons">checkmark_alt</i> Root Canal Therapy</li>
+									      				<li><i class="material-icons">checkmark_alt</i> Implants</li>
+									      			</ul>
+									      		</div>
+									      	</div>
+										</div>
+
+										<div class="tab-widget">
+											<div class="left-icon-col">
+									      		<span><img src="assets/img/icon-clinic-medical.svg" alt="i"></span>
+									      	</div>
+
+									      	<div class="right-content-col">
+									      		<div class="doctor-widget">
+									      			<h6>Specializations</h6>
+									      			<ul>
+									      				<li><i class="material-icons">checkmark_alt</i> Dental Care</li>
+									      				<li><i class="material-icons">checkmark_alt</i> Oral and Maxillofacial Surgery</li>
+									      				<li><i class="material-icons">checkmark_alt</i> Prosthodontics</li>
+									      			</ul>
+									      		</div>
+									      	</div>
+										</div>
+						          	</div>
+						        </div>
+						    </div>
+						</div>
+
+						<div class="tab-pane" id="Location">
+					      	<div class="panel panel-default">
+					        	<div id="collapseTwo" class="panel-collapse collapse">
+					          		<div class="panel-body">
+					          			<!-- Location List -->
+										<div class="location-list">
+											<div class="row">
+											
+												<!-- Clinic Content -->
+												<div class="col-md-6">
+													<div class="clinic-content">
+														<h4 class="clinic-name"><a href="#">Animal Care Center</a></h4>
+														<p class="doc-speciality">BS - Veterinary Medicine</p>
+														<div class="rating">
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star"></i>
+															<span class="d-inline-block average-rating">(16592)</span>
+														</div>
+														<div class="clinic-details mb-0">
+															<ul>
+																<li>
+																	<a href="assets/img/features/feature-01.jpg" data-fancybox="images">
+																		<img src="assets/img/features/feature-01.jpg" alt="Feature Image">
+																	</a>
+																</li>
+																<li>
+																	<a href="assets/img/features/feature-02.jpg" data-fancybox="images">
+																		<img src="assets/img/features/feature-02.jpg" alt="Feature Image">
+																	</a>
+																</li>
+																<li>
+																	<a href="assets/img/features/feature-03.jpg" data-fancybox="images">
+																		<img src="assets/img/features/feature-03.jpg" alt="Feature Image">
+																	</a>
+																</li>
+																<li>
+																	<a href="assets/img/features/feature-04.jpg" data-fancybox="images">
+																		<img src="assets/img/features/feature-04.jpg" alt="Feature Image">
+																	</a>
+																</li>
+															</ul>
+															<!-- <div class="consult-price">
+																$250
+															</div> -->
+															<h5 class="clinic-direction"> <i class="fas fa-map-marker-alt"></i> 2286 Nairobi, Kenya <br><a href="javascript:void(0);">Get Directions</a></h5>
+														</div>
+													</div>
+												</div>
+												<!-- /Clinic Content -->
+												
+												<!-- Clinic Timing -->
+												<div class="col-md-4">
+													<div class="clinic-timing">
+														<div>
+															<p class="timings-days">
+																<span> Mon - Sat </span>
+															</p>
+															<p class="timings-times">
+																<span>10:00 AM - 2:00 PM</span>
+																<span>4:00 PM - 9:00 PM</span>
+															</p>
+														</div>
+													</div>
+												</div>
+												<!-- /Clinic Timing -->
+											</div>
+										</div>
+										<!-- /Location List -->
+					          		</div>
+					          	</div>
+					        </div>
+					    </div>
+
+					    <div class="tab-pane" id="Reviews">
+				      		<div class="panel panel-default">
+					        	<div id="collapseThree" class="panel-collapse collapse">
+					          		<div class="panel-body">
+					          			<!-- Review Listing -->
+											<div class="widget review-listing">
+												<ul class="comments-list">
+												
+													<!-- Comment List -->
+													<li>
+														<div class="comment">
+															<img class="avatar avatar-sm rounded-circle" alt="User Image" src="assets/img/patients/patient10.jpg">
+															<div class="comment-body">
+																<div class="meta-data">
+																	<span class="comment-author">Richard Wilson</span>
+																	<span class="comment-date">Reviewed 2 Days ago</span>
+																	<div class="review-count rating">
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star"></i>
+																	</div>
+																</div>
+																<p class="recommended"><i class="far fa-thumbs-up"></i> I recommend the doctor</p>
+																<p class="comment-content">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+																</p>
+																<div class="comment-reply">
+																	<a class="comment-btn" href="#">
+																		<i class="fas fa-reply"></i> Reply
+																	</a>
+																   <p class="recommend-btn">
+																	<span>Recommend?</span>
+																	<a href="#" class="like-btn">
+																		<i class="far fa-thumbs-up"></i> Yes
+																	</a>
+																	<a href="#" class="dislike-btn">
+																		<i class="far fa-thumbs-down"></i> No
+																	</a>
+																</p>
+																</div>
+															</div>
+														</div>
+														
+														<!-- Comment Reply -->
+														<ul class="comments-reply">
+															<li>
+																<div class="comment">
+																	<img class="avatar avatar-sm rounded-circle" alt="User Image" src="assets/img/patients/patient7.jpg">
+																	<div class="comment-body">
+																		<div class="meta-data">
+																			<span class="comment-author">Richard Wilson</span>
+																			<span class="comment-date">Reviewed 2 Days ago</span>
+																			<div class="review-count rating">
+																				<i class="fas fa-star filled"></i>
+																				<i class="fas fa-star filled"></i>
+																				<i class="fas fa-star filled"></i>
+																				<i class="fas fa-star filled"></i>
+																				<i class="fas fa-star"></i>
+																			</div>
+																		</div>
+																		<p class="comment-content">
+																			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+																		</p>
+																		<div class="comment-reply">
+																			<a class="comment-btn" href="#">
+																				<i class="fas fa-reply"></i> Reply
+																			</a>
+																			<p class="recommend-btn">
+																				<span>Recommend?</span>
+																				<a href="#" class="like-btn">
+																					<i class="far fa-thumbs-up"></i> Yes
+																				</a>
+																				<a href="#" class="dislike-btn">
+																					<i class="far fa-thumbs-down"></i> No
+																				</a>
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+														<!-- /Comment Reply -->
+														
+													</li>
+													<!-- /Comment List -->
+													
+													<!-- Comment List -->
+													<li>
+														<div class="comment">
+															<img class="avatar avatar-sm rounded-circle" alt="User Image" src="assets/img/patients/patient2.jpg">
+															<div class="comment-body">
+																<div class="meta-data">
+																	<span class="comment-author">Travis Trimble</span>
+																	<span class="comment-date">Reviewed 4 Days ago</span>
+																	<div class="review-count rating">
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star filled"></i>
+																		<i class="fas fa-star"></i>
+																	</div>
+																</div>
+																<p class="comment-content">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+																	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Ut enim ad minim veniam, quis nostrud exercitation.
+																	Curabitur non nulla sit amet nisl tempus
+																</p>
+																<div class="comment-reply">
+																	<a class="comment-btn" href="#">
+																		<i class="fas fa-reply"></i> Reply
+																	</a>
+																	<p class="recommend-btn">
+																		<span>Recommend?</span>
+																		<a href="#" class="like-btn">
+																			<i class="far fa-thumbs-up"></i> Yes
+																		</a>
+																		<a href="#" class="dislike-btn">
+																			<i class="far fa-thumbs-down"></i> No
+																		</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<!-- /Comment List -->
+													
+												</ul>
+												
+												<!-- Show All -->
+												<div class="all-feedback text-center">
+													<a href="#" class="btn btn-sm">
+														Show all feedback <strong>(167)</strong>
+													</a>
+												</div>
+												<!-- /Show All -->
+												
+											</div>
+											<!-- /Review Listing -->
+					          		</div>
+					          	</div>
+				          	</div>
+				      	</div>
+
+				      	<div class="tab-pane" id="Hours">
+			      			<div class="panel panel-default">
+			        			<div id="collapseFour" class="panel-collapse collapse">
+			          				<div class="panel-body">
+			          					<!-- Business Hours Widget -->
+								    	<div class="widget business-widget">
+											<div class="widget-content">
+												<div class="listing-day current">
+													<div class="left-icon"><img src="assets/img/today-icon.svg" alt=""></div>
+													<div class="day">Today <span>5 Nov 2019</span></div>
+													<div class="time-items">
+														<span class="open-status"><span class="badge bg-success-light">Open Now</span></span>
+														<span class="time">07:00 AM - 09:00 PM</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="widget business-widget">
+											<div class="widget-content">
+												<div class="listing-hours">
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Monday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Tuesday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Wednesday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Thursday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Friday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day"><i class="check-icon-black"></i> Saturday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day closed">
+														<div class="day"><i class="check-icon-red"></i> Sunday</div>
+														<div class="time-items">
+															<span class="time"><span class="badge bg-danger-light">Closed</span></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /Business Hours Widget -->  
+			          				</div>
+			          			</div>
+			          		</div>
+			          	</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Doctor Profile -->
+
+			<div class="book-appointment-btn">
+				<a href="patient-date-time.html" class="btn">Book Appointment</a>
+			</div>
+
+	    </div>
+
+	</div>
+    <!-- /Main wrapper -->
+	
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    
+    <!-- Bootstrap Core JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Fancyboc JS -->
+	<script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+	<!-- Swiper JS -->
+    <script src="assets/plugins/swiper/js/swiper.min.js"></script>
+
+     <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+	
+</body>
+
+</html>
