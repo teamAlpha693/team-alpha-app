@@ -830,7 +830,10 @@ body.overlay-body:before {
 /*-----------------
 	6. Login / Register
 -----------------------*/
-
+.logo-header {
+   /* font-weight:'bold'; */
+   color: #0db9f2;
+}
 .page.login-page {
     background: #fff;
 }
